@@ -4,9 +4,9 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
-const token = 'YOUR_TELEGRAM_BOT_TOKEN'; // Replace with your Telegram bot token
+const token = '7415694573:AAG_us4QH-goaNZ-h7yPW6wmL1SK6rUCfGs'; // Replace with your Telegram bot token
 const bot = new TelegramBot(token, { polling: true });
-const channelUsername = '@nepdevs'; // Replace with your channel username
+const channelUsername = '@Big_Mouse_Inc'; // Replace with your channel username
 
 const userAgents = [
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
@@ -99,7 +99,7 @@ bot.onText(/https?:\/\/(www\.)?mediafire\.com\/file\/[^\s]+/, async (msg, match)
         ]
       }
     };
-    bot.sendMessage(chatId, 'You are not a member. Please join @nepdevs to use this bot.', opts);
+    bot.sendMessage(chatId, 'You are not a member. Please join @Big_Mouse_Inc to use this bot.', opts);
     return;
   }
 
